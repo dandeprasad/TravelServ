@@ -27,7 +27,8 @@ public class SampleControllerImpl implements ISampleController {
 	@Produces({ MediaType.APPLICATION_JSON })
 	@Path("/hello")
 	public Response sayHello() {
-		// String responseText = "Hello World dande";
+		 String responseText = "Hello World dande";
+//one more comment
 		sampleService.getSomedata();
 		logger.debug("test data");
 		return Response.status(Response.Status.OK).entity(sampleService).build();
